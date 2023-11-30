@@ -15,7 +15,7 @@ let SCORE1 = parseInt(localStorage.getItem("computerScore")) || 0;
 
 const isNewSession = sessionStorage.getItem("isNewSession") === null;
 
-// Load scores from localStorage or initialize to 0
+
 if (isNewSession || localStorage.getItem("userScore") === null) {
   SCORE = 0;
   localStorage.setItem("userScore", SCORE.toString());
@@ -62,7 +62,7 @@ const referee = (userHand, cpHand) => {
   const userChoiceElement = document.getElementById("userPickImage");
   const computerChoiceElement = document.getElementById("computerPickImage");
 
-  // Remove both classes initially
+  
   userChoiceElement.classList.remove("winner", "loser");
   computerChoiceElement.classList.remove("winner", "loser");
 
@@ -71,7 +71,7 @@ const referee = (userHand, cpHand) => {
     (userHand === "rock" && cpHand === "scissors") ||
     (userHand === "scissors" && cpHand === "paper")
   ) {
-    result = "YOU WIN!";
+    result = "YOU WIN AGAINST PC";
     setScore(SCORE + 1);
     showNextButton();
     userChoiceElement.classList.add("winner");
@@ -80,12 +80,12 @@ const referee = (userHand, cpHand) => {
     (userHand === "rock" && cpHand === "paper") ||
     (userHand === "scissors" && cpHand === "rock")
   ) {
-    result = "YOU LOSE!";
+    result = "YOU LOST AGAINST PC";
     setScore1(SCORE1 + 1);
     hideNextButton();
     computerChoiceElement.classList.add("loser");
   } else {
-    result = "It's a tie!";
+    result = "TIE UP";
     hideNextButton();
   }
 
@@ -211,7 +211,7 @@ if (isNewSession) {
 }
 
 window.addEventListener("beforeunload", () => {
-  // Save scores when the browser is closed
+  
   localStorage.setItem("userScore", SCORE.toString());
   localStorage.setItem("computerScore", SCORE1.toString());
 });

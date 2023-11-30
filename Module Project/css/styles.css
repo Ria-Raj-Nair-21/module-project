@@ -1,6 +1,4 @@
-/*---------------------------------------------------------------
- Global styles
-----------------------------------------------------------------*/
+
 
 * {
   padding: 0;
@@ -13,11 +11,7 @@ body {
   margin: 0;
 }
 
-/* 
--------------------------------------------------------------------------------
-HTML elements 
--------------------------------------------------------------------------------
-*/
+
 
 .wrapper {
   display: flex;
@@ -231,25 +225,22 @@ HTML elements
 }
 .close-btn {
   border: solid floralwhite;
-  border-radius: 60%; /* Use 50% for a circular shape */
+  border-radius: 60%;
   outline: none;
   background: red;
   cursor: pointer;
   color: #fff;
-  width: 50px; /* Adjust width as needed */
+  width: 50px; 
   height: 50px;
-  padding: 7px; /* Adjust padding as needed */
-  position: absolute; /* Position it absolutely within its container */
-  top: 65px; /* Adjust top position as needed */
-  right:50px; /* Adjust right position as needed */
+  padding: 7px; 
+  position: absolute; 
+  top: 65px; 
+  right:50px; 
 }
 
 .rules-img {
   padding: 2rem 4rem;
- 
-  
-
-}
+ }
 .show-modal {
   opacity: 1;
   pointer-events: initial;
@@ -260,7 +251,7 @@ HTML elements
   position: absolute;
   bottom: 2rem;
   outline: none;
-  border: 2px solid white; /* Add border style for both buttons */
+  border: 2px solid white;
   border-radius: 0.6rem;
   background-color:#8CC461;;
   padding: 0.6rem 2.5rem;
@@ -287,7 +278,7 @@ HTML elements
 }
 
 
-/* Add styling for the hurray-page and hurray-content */
+
 .hurray-page {
   
   display: none;
@@ -316,17 +307,17 @@ HTML elements
 }
 
 .hurray-content img {
-  width: 252px; /* 50% of the original width */
-  height: 148.5px; /* 50% of the original height */
+  width: 252px; 
+  height: 148.5px; 
 }
 
 .hurray-content h1 {
-  width: 232px; /* 50% of the original width */
-  height: 43px; /* 50% of the original height */
+  width: 232px; 
+  height: 43px; 
   font-family: 'Roboto', sans-serif;
-  font-size: 45.5px; /* 50% of the original font size */
+  font-size: 45.5px; 
   font-weight: 600;
-  line-height: 53.5px; /* 50% of the original line height */
+  line-height: 53.5px; 
   letter-spacing: 0.1em;
   text-align: center;
   color:#FFFFFF;
@@ -357,7 +348,7 @@ color: #FFFFFF;
 .hurray-content .star-img img {
   width: 100%;
   height: 100%;
-  display: block; /* Ensure images are treated as block elements */
+  display: block; 
 }
 
 .hurray-content .star-img .trophy-img {
@@ -382,27 +373,24 @@ color: #FFFFFF;
   background: rgb(218, 218, 218);
   
 }
-/* Add this to your existing CSS */
-/* Add this to your existing CSS */
-/* Add this to your existing CSS */
-/* Add this to your existing CSS */
+
 .winner {
-   /* Adjust the border properties as needed */
+   
   box-shadow: 0 0 0 20px #2E9A2563,0 0 0 40px #2E9A2563, 0 0 0 80px #2E9A2563, 0 0 0 130px #2E9A2563;
   transition: winner 1s ease;
   border-radius: 180px;
 }
 
-/* Add this animation for the winner class */
+
 
 .loser {
-  /* Adjust the border properties as needed */
+  
  box-shadow: 0 0 0 20px #2E9A2563,0 0 0 40px #2E9A2563, 0 0 0 80px #2E9A2563, 0 0 0 130px #2E9A2563;
  transition: winner 1s ease;
  border-radius: 180px;
 }
 
-/* Add this animation for the winner class */
+
 
 
 

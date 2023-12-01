@@ -1,7 +1,7 @@
 const handOptions = {
   "rock": "assets/Group 4.png",
-  "paper": "assets/Group 2.png",
-  "scissors": "assets/Group 3.png",
+  "paper": "assets/Group 3.png",
+  "scissors": "assets/Group 2.png",
 }
 const btnRules = document.querySelector(".rules-btn");
 const btnClose = document.querySelector(".close-btn");
